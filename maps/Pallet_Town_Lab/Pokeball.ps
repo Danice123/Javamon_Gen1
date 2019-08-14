@@ -1,0 +1,57 @@
+!Branch:ChoosePokemon ChoosePokemon
+!Branch:LastPokemon StarterPicked
+!Display:description
+!Stop:
+@ChoosePokemon
+!Lock:
+!ShowDexPage:<pokemon>
+!Choose:choose_<pokemon> choice Yes No
+!Branch:Chosen String choice Yes
+!Unlock:
+!Stop:
+
+@Chosen
+!Hide:TARGET
+!Display:energetic
+!GivePokemon:<pokemon> 5
+!Set:StarterPicked
+!Set:Starter=<pokemon>
+!Goto:Chosen_<pokemon>
+
+@Chosen_Bulbasaur
+!Walk:Blue S E E
+!Face:Blue N
+!Hide:pokeballChar
+!Goto:RivalTake
+
+@Chosen_Charmander
+!Walk:Blue S S E E E N
+!Hide:pokeballSquir
+!Goto:RivalTake
+
+@Chosen_Squirtle
+!Walk:Blue S S E E E E N
+!Hide:pokeballBulb
+
+@RivalTake
+!Display:rivalTake
+!Display:rival_<pokemon>
+!Set:BlueLabBattle
+!Unset:ChoosePokemon
+!Unlock:
+!Stop:
+
+@LastPokemon
+!Display:lastPokemon
+!Stop:
+
+$description:Those are Pokeballs. They contain Pokemon!
+$choose_Bulbasaur:So! You want the plant Pokemon, Bulbasaur?
+$choose_Charmander:So! You want the fire Pokemon, Charmander?
+$choose_Squirtle:So! You want the water Pokemon, Squirtle?
+$energetic:This Pokemon is really energetic!
+$rivalTake:<rivalName>; I'll take this one, then!
+$rival_Bulbasaur:<rivalName> received a Charmander!
+$rival_Charmander:<rivalName> received a Squirtle!
+$rival_Squirtle:<rivalName> received a Bulbasaur!
+$lastPokemon:Thats Prof. Oak's last Pokemon!

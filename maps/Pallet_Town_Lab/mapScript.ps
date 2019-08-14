@@ -1,0 +1,59 @@
+!Branch:OakInLab OakPalletEncounter
+!Goto:CheckBlueInLab
+@OakInLab
+!Unhide:Oak
+
+@CheckBlueInLab
+!Branch:BlueNotInLab FirstRivalBattle
+!Goto:CheckBlueFacing
+@BlueNotInLab
+!Hide:Blue
+
+@CheckBlueFacing
+!Branch:BlueLookingNorth ChoosePokemon
+!Goto:CheckBlueAtPokeballs
+@BlueLookingNorth
+!Face:Blue N
+
+@CheckBlueAtPokeballs
+!Branch:BlueAtPokeballs BlueLabBattle
+!Goto:CheckHidePokeballs
+@BlueAtPokeballs
+!Branch:BlueAtChar ChoseBulbasaur
+!Branch:BlueAtSquirt ChoseCharmander
+!Branch:BlueAtBulb ChoseSquirtle
+!Goto:CheckHidePokeballs
+@BlueAtChar
+!Move:Blue 7 8 1
+!Goto:CheckHidePokeballs
+@BlueAtSquirt
+!Move:Blue 8 8 1
+!Goto:CheckHidePokeballs
+@BlueAtBulb
+!Move:Blue 9 8 1
+
+@CheckHidePokeballs
+!Branch:HideBulb ChoseBulbasaur
+!Branch:HideChar ChoseCharmander
+!Branch:HideSquirt ChoseSquirtle
+!Goto:CheckHidePokedex
+@HideSquirt
+!Hide:pokeballBulb
+!Hide:pokeballSquir
+!Goto:CheckHidePokedex
+@HideBulb
+!Hide:pokeballBulb
+!Hide:pokeballChar
+!Goto:CheckHidePokedex
+@HideChar
+!Hide:pokeballChar
+!Hide:pokeballSquir
+
+@CheckHidePokedex
+!Branch:HasPokedex HasPokedex
+!Goto:End
+@HasPokedex
+!Hide:pokedex1
+!Hide:pokedex2
+@End
+!Stop:

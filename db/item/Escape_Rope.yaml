@@ -1,0 +1,9 @@
+---
+name: Escape Rope
+tag: Escape_Rope
+cost: 550
+stackable: true
+tossable: true
+usableInBattle: false
+usableInField: true
+consumedOnUse: true

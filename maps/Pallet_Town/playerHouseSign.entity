@@ -1,0 +1,8 @@
+---
+x: 9
+y: 12
+layer: 1
+name: PlayerHouseSign
+type: SIGN
+strings:
+  text: <playerName>'s house

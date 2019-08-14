@@ -1,0 +1,64 @@
+!Branch:BlueLabBattle BlueLabBattle
+!Branch:ChoosePokemon ChoosePokemon
+!Stop:
+@ChoosePokemon
+!Lock:
+!Display:1
+!Walk:PLAYER N
+!Unlock
+!Stop:
+@BlueLabBattle
+!Lock:
+!Face:PLAYER N
+!RespawnPoint:
+!Display:2
+!Branch:<Side>Bulbasaur Starter=Bulbasaur
+!Branch:<Side>Charmander Starter=Charmander
+!Branch:<Side>Squirtle Starter=Squirtle
+!Stop:
+
+@LeftSquirtle
+!Walk:Blue W W W W S
+!Goto:BattleSquirtle
+@RightSquirtle
+!Walk:Blue W W W S
+@BattleSquirtle
+!StartBattle:RivalBulbasaurTrainer
+!Goto:FinishBattle
+
+@LeftBulbasaur
+!Walk:Blue W W S
+!Goto:BattleBulbasaur
+@RightBulbasaur
+!Walk:Blue W S
+@BattleBulbasaur
+!StartBattle:RivalCharmanderTrainer
+!Goto:FinishBattle
+
+@LeftCharmander
+!Walk:Blue W W W S
+!Goto:BattleCharmander
+@RightCharmander
+!Walk:Blue W W S
+@BattleCharmander
+!StartBattle:RivalSquirtleTrainer
+
+@FinishBattle
+!Display:3
+
+!Goto:<Side>
+@Left
+!Walk:Blue E S S S S S S S S
+!Goto:Continue
+@Right
+!Walk:Blue W S S S S S S S S
+
+@Continue
+!Hide:Blue
+!Unset:BlueLabBattle
+!Set:FirstRivalBattle
+!Unlock:
+!Stop:
+$1:Oak: Hey! Don't go away yet!
+$2:<rivalName>: Wait <playerName>! Let's check out our Pokemon!/nCome on, I'll take you on!
+$3:<rivalName>: Okay! I'll make my Pokemon fight to toughen it up!/n<playerName>! Gramps! Smell you later!

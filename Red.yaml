@@ -1,0 +1,9 @@
+---
+name: Red Version
+menuJar: menu.jar2
+attackDBPath: db/attack
+monsterDBPath: db/monster
+itemDBPath: db/item
+mapPath: maps
+playerSpriteset: entity/sprites/Red.png
+startScript: Start.ps

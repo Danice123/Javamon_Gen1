@@ -12,5 +12,6 @@ trainer:
   - name: Squirtle
     level: 5
   trainerName: Rival
+  trainerImage: entity/player.png
   trainerLossQuip: "Blue: WHAT? Unbelievable! I picked the wrong Pokemon!"
   winnings: 175

@@ -1,0 +1,10 @@
+---
+x: 7
+y: 9
+layer: 2
+name: Pallet_Town_Lab_Charmander
+type: OBJECT
+spriteset: pokeball
+script: pokeball
+strings:
+  pokemon: Charmander

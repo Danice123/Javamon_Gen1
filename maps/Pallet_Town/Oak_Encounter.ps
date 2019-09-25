@@ -1,0 +1,48 @@
+!Set:Pallet_Town_Oak_Encounter
+!Lock:
+!Display:1
+!Face:PLAYER S
+!Unhide:Pallet_Town_Event_Oak
+!Goto:<Side>
+
+@Left
+!Walk:Pallet_Town_Event_Oak N N E N N N
+!Display:2
+!Follow:PLAYER Pallet_Town_Event_Oak
+!Walk:Pallet_Town_Event_Oak S S S W S S S S S S S E E E N
+!Goto:Continue
+
+@Right
+!Walk:Pallet_Town_Event_Oak N N E N N E N
+!Display:2
+!Follow:PLAYER Pallet_Town_Event_Oak
+!Walk:Pallet_Town_Event_Oak S W S S W S S S S S S S E E E N
+!Goto:Continue
+
+@Continue
+!Hide:Pallet_Town_Event_Oak
+!Unfollow:Pallet_Town_Event_Oak
+!Walk:PLAYER N
+!Warp:Pallet_Town_Lab 6 1 1
+
+!Move:Pallet_Town_Lab_Oak 6 2 1
+!Face:Pallet_Town_Lab_Rival N
+!Follow:PLAYER Pallet_Town_Lab_Oak
+!Walk:Pallet_Town_Lab_Oak N N N N N N N N
+!Unfollow:Pallet_Town_Lab_Oak
+!Face:Pallet_Town_Lab_Oak S
+!Display:3
+!Display:4
+!Display:5
+!Display:6
+!Set:Pallet_Town_Lab_Choose_Pokemon
+!Unset:Pallet_Town_Lab_Barrier
+!Unlock:
+!Stop:
+
+$1:Hey, Wait! Don't go out!
+$2:Oak: It's unsafe! Wild Pokemon live in tall grass!\pYou need your own Pokemon for your protection. I know!\pHere, come with me!
+$3:<rivalName>: Gramps! I'm fed up with waiting!
+$4:Oak: <rivalName>? Let me think...\pOh that's right, I told you to come! Just wait!\pHere, <playerName>!\pThere are 3 Pokemon here!\pHaha!\pThey are inside the Poke Balls. When I was young, I was a serious Pokemon trainer!\pIn my old age, I have only 3 left, but you can have one! Choose!
+$5:<rivalName>: Hey! Gramps! What about me?
+$6:Oak: Be patient! <rivalName>, you can have one too!

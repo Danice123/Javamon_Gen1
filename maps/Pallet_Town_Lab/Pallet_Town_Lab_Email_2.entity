@@ -1,0 +1,8 @@
+---
+x: 2
+y: 11
+layer: 2
+name: Pallet_Town_Lab_Email_2
+type: SIGN
+strings:
+  text: "There's an email message here!\\p...\\pCalling all Pokemon trainers!\\pThe elite trainers of Pokemon League are ready to take on all comers!\\pBring your best Pokemon and see how you rate as a trainer!\\pPokemon League HQ Indigo Plateau\\pPS: Prof. Oak please visit us! ..."

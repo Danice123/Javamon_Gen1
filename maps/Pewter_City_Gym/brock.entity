@@ -15,5 +15,5 @@ trainer:
   - name: Onix
     level: 14
   trainerName: Brock
-  trainerLossQuip: "Brock: I took you for granted./nAs proof of your victory, here's the Boulder Badge!"
+  trainerLossQuip: "Brock: I took you for granted.\\pAs proof of your victory, here's the Boulder Badge!"
   winnings: 1386

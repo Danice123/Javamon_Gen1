@@ -5,4 +5,4 @@ layer: 1
 name: ExitSign
 type: SIGN
 strings:
-  text: Leaving Viridian Forest/nPewter City Ahead
+  text: Leaving Viridian Forest\\pPewter City Ahead

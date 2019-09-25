@@ -8,5 +8,5 @@ type: NPC
 spriteset: businessman
 script: $Talk
 strings:
-  text: What!?/nTeam Rocket is at Mt. Moon? Huh? I'm on the phone!/nScram!
+  text: What!?\\pTeam Rocket is at Mt. Moon? Huh? I'm on the phone!\\pScram!
 behavior: FaceEast

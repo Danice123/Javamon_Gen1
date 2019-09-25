@@ -2,21 +2,21 @@
 !Display:2
 
 !Choose:3 choice <newName> Red Ash Jack
-!Branch:CustomName String choice <newName>
-!Branch:Red String choice Red
-!Branch:Ash String choice Ash
-!Branch:Jack String choice Jack
+!Branch:CustomName choice <newName>
+!Branch:Red choice Red
+!Branch:Ash choice Ash
+!Branch:Jack choice Jack
 @CustomName
 !TextInput:<textInputText> false playerName
 !Goto:Continue
 @Red
-!SetString:playerName Red
+!Set:playerName Red
 !Goto:Continue
 @Ash
-!SetString:playerName Ash
+!Set:playerName Ash
 !Goto:Continue
 @Jack
-!SetString:playerName Jack
+!Set:playerName Jack
 !Goto:Continue
 
 @Continue
@@ -24,21 +24,21 @@
 !Display:5
 
 !Choose:6 choice <newName> Blue Gary John
-!Branch:CustomRivalName String choice <newName>
-!Branch:Blue String choice Blue
-!Branch:Gary String choice Gary
-!Branch:John String choice John
+!Branch:CustomRivalName choice <newName>
+!Branch:Blue choice Blue
+!Branch:Gary choice Gary
+!Branch:John choice John
 @CustomRivalName
 !TextInput:<textInputText2> false rivalName
 !Goto:Continue2
 @Blue
-!SetString:rivalName Blue
+!Set:rivalName Blue
 !Goto:Continue2
 @Gary
-!SetString:rivalName Gary
+!Set:rivalName Gary
 !Goto:Continue2
 @John
-!SetString:rivalName John
+!Set:rivalName John
 !Goto:Continue2
 
 @Continue2

@@ -8,5 +8,5 @@ type: NPC
 spriteset: boy2
 script: $Talk
 strings:
-  text: There's a Pokemon Center in every town ahead./nThey don't charge any money either!
+  text: There's a Pokemon Center in every town ahead.\\pThey don't charge any money either!
 behavior: LookAround

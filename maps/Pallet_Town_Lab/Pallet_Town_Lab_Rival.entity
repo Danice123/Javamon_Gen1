@@ -1,0 +1,9 @@
+---
+x: 5
+y: 9
+layer: 1
+facing: South
+name: Pallet_Town_Lab_Rival
+type: NPC
+spriteset: Blue
+script: rival

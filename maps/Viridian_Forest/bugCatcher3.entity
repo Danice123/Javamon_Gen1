@@ -9,7 +9,7 @@ spriteset: boy1
 script: $Trainer
 strings:
   text: Hey, wait up! What's the hurry?
-  defeat: Sometimes, you can find stuff on the ground!/nI'm looking for the stuff I dropped!
+  defeat: Sometimes, you can find stuff on the ground!\\pI'm looking for the stuff I dropped!
 trainer:
   party:
   - name: Weedle

@@ -1,0 +1,10 @@
+---
+x: 6
+y: 4
+layer: 1
+facing: West
+name: Pallet_Town_Player_Home_Mom
+type: NPC
+spriteset: mom
+script: mom
+behavior: FaceWest

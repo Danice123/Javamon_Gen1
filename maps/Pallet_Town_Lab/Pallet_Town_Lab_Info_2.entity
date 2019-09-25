@@ -1,0 +1,8 @@
+---
+x: 6
+y: 12
+layer: 2
+name: Pallet_Town_Lab_Info_2
+type: SIGN
+strings:
+  text: The Save option is on the Menu screen.

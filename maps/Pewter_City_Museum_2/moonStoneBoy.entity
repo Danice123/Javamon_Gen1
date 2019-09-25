@@ -8,5 +8,5 @@ type: NPC
 spriteset: boy1
 script: $Talk
 strings:
-  text: Moon Stone?/nWhat's so special about it?
+  text: Moon Stone?\\pWhat's so special about it?
 behavior: WalkHorizontal

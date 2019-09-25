@@ -8,5 +8,5 @@ type: NPC
 spriteset: boy1
 script: $Talk
 strings:
-  text: I ran out of Poke Balls to catch Pokemon with!/nYou should carry extras!
+  text: I ran out of Poke Balls to catch Pokemon with!\\pYou should carry extras!
 behavior: LookAround

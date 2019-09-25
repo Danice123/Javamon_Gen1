@@ -1,12 +1,15 @@
-!Branch:ChoosePokemon ChoosePokemon
-!Branch:LastPokemon StarterPicked
+!Branch:ChoosePokemon Pallet_Town_Lab_Choose_Pokemon
+!Branch:LastPokemon Bulbasaur_Starter
+!Branch:LastPokemon Charmander_Starter
+!Branch:LastPokemon Squirtle_Starter
 !Display:description
 !Stop:
+
 @ChoosePokemon
 !Lock:
 !ShowDexPage:<pokemon> true
 !Choose:choose_<pokemon> choice Yes No
-!Branch:Chosen String choice Yes
+!Branch:Chosen choice Yes
 !Unlock:
 !Stop:
 
@@ -14,30 +17,26 @@
 !Hide:TARGET
 !Display:energetic
 !GivePokemon:<pokemon> 5
-!Set:StarterPicked
-!Set:Starter=<pokemon>
+!Set:<pokemon>_Starter
 !Goto:Chosen_<pokemon>
-
 @Chosen_Bulbasaur
-!Walk:Blue S E E
-!Face:Blue N
-!Hide:pokeballChar
+!Walk:Pallet_Town_Lab_Rival S E E
+!Face:Pallet_Town_Lab_Rival N
+!Hide:Pallet_Town_Lab_Charmander
 !Goto:RivalTake
-
 @Chosen_Charmander
-!Walk:Blue S S E E E N
-!Hide:pokeballSquir
+!Walk:Pallet_Town_Lab_Rival S S E E E N
+!Hide:Pallet_Town_Lab_Squirtle
 !Goto:RivalTake
-
 @Chosen_Squirtle
-!Walk:Blue S S E E E E N
-!Hide:pokeballBulb
+!Walk:Pallet_Town_Lab_Rival S S E E E E N
+!Hide:Pallet_Town_Lab_Bulbasaur
 
 @RivalTake
 !Display:rivalTake
 !Display:rival_<pokemon>
-!Set:BlueLabBattle
-!Unset:ChoosePokemon
+!Set:Pallet_Town_Lab_Rival_Battle
+!Unset:Pallet_Town_Lab_Choose_Pokemon
 !Unlock:
 !Stop:
 

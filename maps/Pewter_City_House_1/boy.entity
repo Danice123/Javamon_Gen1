@@ -8,5 +8,5 @@ type: NPC
 spriteset: boy1
 script: $Talk
 strings:
-  text: Pokemon become easier to catch when they are hurt or asleep!/nBut, it's not a sure thing!
+  text: Pokemon become easier to catch when they are hurt or asleep!\\pBut, it's not a sure thing!
 behavior: LookAround

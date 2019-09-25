@@ -8,5 +8,5 @@ type: NPC
 spriteset: bun_girl
 script: $Talk
 strings:
-  text: I want a Pikachu! It's so cute!/nI asked my Daddy to catch me one!
+  text: I want a Pikachu! It's so cute!\\pI asked my Daddy to catch me one!
 behavior: LookAround

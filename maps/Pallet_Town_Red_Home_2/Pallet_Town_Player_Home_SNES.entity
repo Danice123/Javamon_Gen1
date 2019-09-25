@@ -1,0 +1,8 @@
+---
+x: 4
+y: 3
+layer: 0
+name: Pallet_Town_Player_Home_SNES
+type: SIGN
+strings:
+  text: <playerName> is playing the SNES!\\p...Okay! It's time to go!

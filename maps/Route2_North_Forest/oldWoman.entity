@@ -8,5 +8,5 @@ type: NPC
 spriteset: old_woman
 script: $Talk
 strings:
-  text: Have you noticed the bushes on the roadside?/nThey can be cut down by a special Pokemon move.
+  text: Have you noticed the bushes on the roadside?\\pThey can be cut down by a special Pokemon move.
 behavior: LookAround

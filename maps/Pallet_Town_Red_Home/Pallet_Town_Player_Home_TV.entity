@@ -1,0 +1,8 @@
+---
+x: 4
+y: 7
+layer: 1
+name: Pallet_Town_Player_Home_TV
+type: SIGN
+strings:
+  text: There's a movie on TV. Four boys are walking on railroad tracks.\\pI better go too.

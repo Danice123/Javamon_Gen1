@@ -8,5 +8,5 @@ type: NPC
 spriteset: old_man
 script: $Talk
 strings:
-  text: Pokemon learn new techniques as they grow!/nBut, some moves must be taught by the trainer!
+  text: Pokemon learn new techniques as they grow!\\pBut, some moves must be taught by the trainer!
 behavior: FaceEast

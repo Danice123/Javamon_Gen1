@@ -8,5 +8,5 @@ type: NPC
 spriteset: businessman
 script: $Talk
 strings:
-  text: You can use that PC in the corner./nThe receptionist told me. So kind!
+  text: You can use that PC in the corner.\\pThe receptionist told me. So kind!
 behavior: WalkVertical

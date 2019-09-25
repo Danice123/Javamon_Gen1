@@ -1,0 +1,17 @@
+---
+x: 0
+y: 0
+layer: 0
+facing: South
+hidden: true
+name: Pallet_Town_Lab_Rival_Trainer_Squirtle
+type: TRAINER
+spriteset: Blue
+trainer:
+  party:
+  - name: Squirtle
+    level: 5
+  trainerName: Rival
+  trainerImage: entity/player.png
+  trainerLossQuip: "Blue: WHAT? Unbelievable! I picked the wrong Pokemon!"
+  winnings: 175

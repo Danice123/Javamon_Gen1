@@ -5,4 +5,4 @@ layer: 1
 name: TrainerTips4
 type: SIGN
 strings:
-  text: Trainer Tips/nNo stealing of Pokemon from other trainers! Catch only wild Pokemon!
+  text: Trainer Tips\\pNo stealing of Pokemon from other trainers! Catch only wild Pokemon!

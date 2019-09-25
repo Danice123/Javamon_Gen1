@@ -8,5 +8,5 @@ type: NPC
 spriteset: ponytail_girl
 script: $Talk
 strings:
-  text: Okay!/nBe sure to read the blackboard carefully!
+  text: Okay!\\pBe sure to read the blackboard carefully!
 behavior: FaceSouth

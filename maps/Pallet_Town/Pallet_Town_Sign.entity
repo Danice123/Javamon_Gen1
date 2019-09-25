@@ -1,0 +1,8 @@
+---
+x: 13
+y: 8
+layer: 1
+name: Pallet_Town_Sign
+type: SIGN
+strings:
+  text: Pallet Town\\pShades of your journey await!

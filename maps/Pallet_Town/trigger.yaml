@@ -7,8 +7,9 @@ triggers:
   arguments:
     mapName: Pallet_Town_Red_Home
     x: 3
-    y: 1
+    y: 0
     layer: 1
+    warpWalk: N
 - x: 19
   y: 12
   layer: 1
@@ -16,8 +17,9 @@ triggers:
   arguments:
     mapName: Pallet_Town_Rival_Home
     x: 3
-    y: 1
+    y: 0
     layer: 1
+    warpWalk: N
 - x: 18
   y: 6
   layer: 1
@@ -25,17 +27,20 @@ triggers:
   arguments:
     mapName: Pallet_Town_Lab
     x: 5
-    y: 1
+    y: 0
     layer: 1
+    warpWalk: N
 - x: 16
   y: 16
   layer: 1
-  script: Oak_Enc
+  script: Oak_Encounter
+  name: Pallet_Town_Oak_Encounter
   arguments:
     Side: Left
 - x: 17
   y: 16
   layer: 1
-  script: Oak_Enc
+  script: Oak_Encounter
+  name: Pallet_Town_Oak_Encounter
   arguments:
     Side: Right

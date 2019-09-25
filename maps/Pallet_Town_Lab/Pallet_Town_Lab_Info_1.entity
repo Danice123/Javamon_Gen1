@@ -1,0 +1,8 @@
+---
+x: 5
+y: 12
+layer: 2
+name: Pallet_Town_Lab_Info_1
+type: SIGN
+strings:
+  text: Push Start to open the Menu!

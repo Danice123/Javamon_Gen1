@@ -8,5 +8,5 @@ type: NPC
 spriteset: ponytail_girl
 script: $Talk
 strings:
-  text: It's rumored that Clefairys came from the moon!/nThey appeared after Moon Stone fell on Mt. Moon.
+  text: It's rumored that Clefairys came from the moon!\\pThey appeared after Moon Stone fell on Mt. Moon.
 behavior: LookAround

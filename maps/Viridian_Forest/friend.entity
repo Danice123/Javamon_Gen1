@@ -8,5 +8,5 @@ type: NPC
 spriteset: boy1
 script: $Talk
 strings:
-  text: I came here with some friends!/nThey're out for Pokemon fights!
+  text: I came here with some friends!\\pThey're out for Pokemon fights!
 behavior: LookAround

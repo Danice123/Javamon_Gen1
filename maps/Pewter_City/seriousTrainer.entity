@@ -8,5 +8,5 @@ type: NPC
 spriteset: boy2
 script: $Talk
 strings:
-  text: There aren't many serious Pokemon trainers here!/nThey're all like Bug Catchers, but Pewter Gym's Brock is totally into it!
+  text: There aren't many serious Pokemon trainers here!\\pThey're all like Bug Catchers, but Pewter Gym's Brock is totally into it!
 behavior: LookAround

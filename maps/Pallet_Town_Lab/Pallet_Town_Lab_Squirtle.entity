@@ -1,0 +1,10 @@
+---
+x: 8
+y: 9
+layer: 2
+name: Pallet_Town_Lab_Squirtle
+type: OBJECT
+spriteset: pokeball
+script: pokeball
+strings:
+  pokemon: Squirtle

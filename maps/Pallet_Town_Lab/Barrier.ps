@@ -1,64 +1,67 @@
-!Branch:BlueLabBattle BlueLabBattle
-!Branch:ChoosePokemon ChoosePokemon
+!Branch:BlueLabBattle Pallet_Town_Lab_Rival_Battle
+!Branch:ChoosePokemon Pallet_Town_Lab_Choose_Pokemon
 !Stop:
+
 @ChoosePokemon
 !Lock:
 !Display:1
 !Walk:PLAYER N
 !Unlock
 !Stop:
+
 @BlueLabBattle
 !Lock:
 !Face:PLAYER N
+!Unset:Pallet_Town_Lab_Rival_Battle
 !RespawnPoint:
 !Display:2
-!Branch:<Side>Bulbasaur Starter=Bulbasaur
-!Branch:<Side>Charmander Starter=Charmander
-!Branch:<Side>Squirtle Starter=Squirtle
+!Branch:<Side>Bulbasaur Bulbasaur_Starter
+!Branch:<Side>Charmander Charmander_Starter
+!Branch:<Side>Squirtle Squirtle_Starter
 !Stop:
 
 @LeftSquirtle
-!Walk:Blue W W W W S
+!Walk:Pallet_Town_Lab_Rival W W W W S
 !Goto:BattleSquirtle
 @RightSquirtle
-!Walk:Blue W W W S
+!Walk:Pallet_Town_Lab_Rival W W W S
 @BattleSquirtle
-!StartBattle:RivalBulbasaurTrainer
+!StartBattle:Pallet_Town_Lab_Rival_Trainer_Bulbasaur
 !Goto:FinishBattle
 
 @LeftBulbasaur
-!Walk:Blue W W S
+!Walk:Pallet_Town_Lab_Rival W W S
 !Goto:BattleBulbasaur
 @RightBulbasaur
-!Walk:Blue W S
+!Walk:Pallet_Town_Lab_Rival W S
 @BattleBulbasaur
-!StartBattle:RivalCharmanderTrainer
+!StartBattle:Pallet_Town_Lab_Rival_Trainer_Charmander
 !Goto:FinishBattle
 
 @LeftCharmander
-!Walk:Blue W W W S
+!Walk:Pallet_Town_Lab_Rival W W W S
 !Goto:BattleCharmander
 @RightCharmander
-!Walk:Blue W W S
+!Walk:Pallet_Town_Lab_Rival W W S
 @BattleCharmander
-!StartBattle:RivalSquirtleTrainer
+!StartBattle:Pallet_Town_Lab_Rival_Trainer_Squirtle
 
 @FinishBattle
 !Display:3
 
 !Goto:<Side>
 @Left
-!Walk:Blue E S S S S S S S S
+!Walk:Pallet_Town_Lab_Rival E S S S S S S S S
 !Goto:Continue
 @Right
-!Walk:Blue W S S S S S S S S
+!Walk:Pallet_Town_Lab_Rival W S S S S S S S S
 
 @Continue
-!Hide:Blue
-!Unset:BlueLabBattle
-!Set:FirstRivalBattle
+!Hide:Pallet_Town_Lab_Rival
+!Set:First_Rival_Battle
 !Unlock:
 !Stop:
+
 $1:Oak: Hey! Don't go away yet!
 $2:<rivalName>: Wait <playerName>! Let's check out our Pokemon!\pCome on, I'll take you on!
 $3:<rivalName>: Okay! I'll make my Pokemon fight to toughen it up!\p<playerName>! Gramps! Smell you later!

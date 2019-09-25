@@ -5,4 +5,4 @@ layer: 1
 name: CitySign
 type: SIGN
 strings:
-  text: Pewter City/nA Stone Gray City
+  text: Pewter City\\pA Stone Gray City

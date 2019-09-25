@@ -1,0 +1,57 @@
+!Face:TARGET PLAYER
+!Branch:HasPokedex Has_Pokedex
+!Branch:ChoosePokemon Pallet_Town_Lab_Choose_Pokemon
+!Branch:BlueLabBattle Pallet_Town_Lab_Rival_Battle
+!Branch:FirstRivalBattle First_Rival_Battle
+!Stop:
+
+@ChoosePokemon
+!Display:1
+!Stop:
+
+@BlueLabBattle
+!Display:2
+!Stop:
+
+@FirstRivalBattle
+!Branch:HasParcel Item Oak_Parcel
+!Display:3
+!Stop:
+
+@HasParcel
+!Lock:
+!Display:4
+!TakeItem:Oak_Parcel
+!Sleep:200
+!Display:5
+!Move:Pallet_Town_Lab_Rival 5 1 1
+!Unhide:Pallet_Town_Lab_Rival
+!Walk:Pallet_Town_Lab_Rival N N N N N N N N
+!Display:6
+!Sleep:200
+!Display:7
+!Set:Has_Pokedex
+!Hide:Pallet_Town_Lab_Pokedex_1
+!Hide:Pallet_Town_Lab_Pokedex_2
+!Display:8
+!Face:Pallet_Town_Lab_Rival p
+!Display:9
+!Walk:Pallet_Town_Lab_Rival S S S S S S S S
+!Hide:Pallet_Town_Lab_Rival
+!Unlock:
+!Stop:
+
+@HasPokedex
+!Display:10
+!Stop:
+
+$1:Oak: Now, <playerName>, which Pokemon do you want?
+$2:Oak: If a wild Pokemon appears, your Pokemon can fight against it!
+$3:Oak: <playerName>, raise your young Pokemon by making it fight!
+$4:Oak: Oh, <playerName>!\pHow is my old Pokemon?\pWell, it seems to like you a lot.\pYou must be talented as a Pokemon trainer!\pWhat? You have something for me?\p<playerName> delivered Oak's Parcel.\pAh! This is the custom Poke Ball I ordered! Thank you!
+$5:<rivalName>: Gramps!
+$6:<rivalName>: What did you call me for?
+$7:Oak: Oh right! I have a request of you two.\pOn the desk there is my invention, the Pokedex!\pIt automatically records data on Pokemon you've seen or caught!\pIt's a hi-tech encyclopedia!\pOak; <playerName> and <rivalName>! Take these with you!\p<playerName> got a Pokedex from Oak!
+$8:To make a complete guide on all the Pokemon in the world... That was my dream!\pBut, I'm too old! I can't do it! So, I want you two to fulfill my dream for me!\pGet moving, you two! This is a great undertaking in Pokemon history!
+$9:<rivalName>: Alright Gramps! Leave it all to me! <playerName>, I hate to say it, but I don't need you!\pI know! I'll borrow a Town Map from my sis!\pI'll tell her not to lend you one, <playerName>! Hahaha!
+$10:Pokemon around the world wait for you, <playerName>!

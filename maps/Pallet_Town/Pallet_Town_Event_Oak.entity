@@ -1,0 +1,9 @@
+---
+x: 15
+y: 10
+layer: 1
+facing: North
+name: Pallet_Town_Event_Oak
+type: NPC
+spriteset: Oak
+hidden: true

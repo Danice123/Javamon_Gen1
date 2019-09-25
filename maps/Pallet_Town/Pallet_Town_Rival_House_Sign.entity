@@ -1,0 +1,8 @@
+---
+x: 17
+y: 12
+layer: 1
+name: Pallet_Town_Rival_House_Sign
+type: SIGN
+strings:
+  text: <rivalName>'s house

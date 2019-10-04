@@ -1,0 +1,8 @@
+---
+x: 17
+y: 18
+layer: 1
+name: Viridian_City_Sign
+type: SIGN
+strings:
+  text: Viridian City\\pThe Eternally Green Paradise

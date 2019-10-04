@@ -1,0 +1,8 @@
+---
+x: 25
+y: 11
+layer: 1
+name: Route2_Tree_2
+type: OBJECT
+spriteset: tree
+script: $tree

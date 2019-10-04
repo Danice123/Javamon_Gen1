@@ -1,0 +1,12 @@
+---
+x: 5
+y: 4
+layer: 1
+facing: West
+name: Viridian_City_House_Father
+type: NPC
+spriteset: balding_man
+script: $Talk
+strings:
+  text: Coming up with nicknames is fun, but hard.\\pSimple names are the easiest to remember.
+behavior: LookAround

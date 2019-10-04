@@ -1,0 +1,12 @@
+---
+x: 10
+y: 4
+layer: 1
+facing: North
+name: Viridian_City_PC_Computer_Helper
+type: NPC
+spriteset: businessman
+script: $Talk
+strings:
+  text: You can use that PC in the corner.\\pThe receptionist told me. So kind!
+behavior: WalkVertical

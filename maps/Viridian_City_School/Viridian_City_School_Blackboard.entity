@@ -1,0 +1,7 @@
+---
+x: 3
+y: 7
+layer: 1
+name: Viridian_City_School_Blackboard
+type: OBJECT
+script: Blackboard

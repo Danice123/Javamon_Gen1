@@ -1,8 +1,0 @@
----
-x: 3
-y: 6
-layer: 1
-facing: South
-name: PC_Girl
-type: NPC
-spriteset: pc_girl

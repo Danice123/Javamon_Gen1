@@ -1,0 +1,8 @@
+---
+x: 3
+y: 6
+layer: 1
+facing: South
+name: Viridian_City_PC_Healer
+type: NPC
+spriteset: pc_girl

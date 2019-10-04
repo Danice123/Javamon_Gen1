@@ -1,48 +1,46 @@
-!Branch:SecondRivalBattle Ignore
 !Lock:
-!Unhide:Blue
+!Unhide:Route22_Rival
 !Goto:<Side>
 
 @Bottom
-!Walk:Blue E E E E E E E E
+!Walk:Route22_Rival E E E E E E E E
 !Goto:Continue
 @Top
-!Walk:Blue N E E E E E E E E
+!Walk:Route22_Rival N E E E E E E E E
 
 @Continue
 !Display:1
-!Branch:ChoseBulbasaur ChoseBulbasaur
-!Branch:ChoseCharmander ChoseCharmander
-!Branch:ChoseSquirtle ChoseSquirtle
+!Branch:Charmander Bulbasaur_Starter
+!Branch:Squirtle Charmander_Starter
+!Branch:Bulbasaur Squirtle_Starter
 !Stop:
 
-@ChoseBulbasaur
-!StartBattle:RivalCharmanderTrainer
+@Charmander
+!StartBattle:Route22_Rival_Charmander
 !Goto:Continue2
 
-@ChoseCharmander
-!StartBattle:RivalSquirtleTrainer
+@Squirtle
+!StartBattle:Route22_Rival_Squirtle
 !Goto:Continue2
 
-@ChoseSquirtle
-!StartBattle:RivalBulbasaurTrainer
+@Bulbasaur
+!StartBattle:Route22_Rival_Bulbasaur
 
 @Continue2
 !Display:2
 !Goto:<Side>2
 
 @Bottom2
-!Walk:Blue N E E E S S S S S S S
+!Walk:Route22_Rival N E E E S S S S S S S
 !Goto:Continue3
 @Top2
-!Walk:Blue S E E E S S S S S S
+!Walk:Route22_Rival S E E E S S S S S S
 
 @Continue3
-!Hide:Blue
-!Set:SecondRivalBattle
+!Hide:Route22_Rival
+!Set:Second_Rival_Battle
 !Unlock:
 !Stop:
-@Ignore
-!Stop:
+
 $1:<rivalName>; Hey! <playerName>!\pYou're going to the Pokemon League?\pForget it! You probably don't have any Badges! The guard won't let you through!\pBy the way, did your Pokemon get any stronger?
 $2:I heard the Pokemon League has many tough trainers!\pI have to figure out how to get past them!\pYou should quit dawdling and get a move on!

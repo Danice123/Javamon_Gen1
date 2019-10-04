@@ -1,0 +1,9 @@
+---
+x: 25
+y: 22
+layer: 1
+facing: South
+name: Route22_Rival
+type: NPC
+spriteset: Blue
+hidden: true

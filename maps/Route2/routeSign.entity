@@ -1,8 +1,0 @@
----
-x: 18
-y: 6
-layer: 1
-name: RouteSign
-type: SIGN
-strings:
-  text: Route 2 Viridian City - Pewter City

@@ -1,8 +1,0 @@
----
-x: 12
-y: 16
-layer: 1
-name: RouteSign
-type: SIGN
-strings:
-  text: Pokemon League - Front Gate

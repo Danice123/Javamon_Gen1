@@ -1,0 +1,12 @@
+---
+x: 3
+y: 4
+layer: 1
+facing: South
+name: Viridian_City_PM_Potion_Guy
+type: NPC
+spriteset: boy2
+script: $Talk
+strings:
+  text: No! Potions are all sold out.
+behavior: LookAround

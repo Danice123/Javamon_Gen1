@@ -1,17 +1,21 @@
-!Branch:HasPokedex HasPokedex
+!Branch:HasPokedex Has_Pokedex
 !Display:1
-!Walk:p S
+!Walk:PLAYER S
 !Stop:
+
 @HasPokedex
+!Face:TARGET PLAYER
 !Display:2
-!Choose:3 yes\po Catch_Tutorial
-!Branch:Catch_Tutorial Catch_Tutorial
+!Choose:3 Choice Yes No
+!Branch:Catch_Tutorial Choice Yes
+!Display:6
+!Stop:
+
+@Catch_Tutorial
 !Display:4
 !Display:5
 !Stop:
-@Catch_Tutorial
-!Display:6
-!Stop:
+
 $1:You can't go through here!\pThis is private property!
 $2:Ahh, I've had my coffee now and I feel great!\pSure you can go through!
 $3:Are you in a hurry?

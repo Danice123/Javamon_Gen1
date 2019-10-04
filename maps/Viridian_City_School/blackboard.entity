@@ -1,7 +1,0 @@
----
-x: 3
-y: 7
-layer: 1
-name: blackboard
-type: OBJECT
-script: Blackboard

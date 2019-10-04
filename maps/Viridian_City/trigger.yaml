@@ -39,4 +39,5 @@ triggers:
 - x: 19
   y: 26
   layer: 1
+  name: Viridian_City_Roadblock
   script: roadblock

@@ -3,18 +3,20 @@ triggers:
 - x: 3
   y: 0
   layer: 1
-  script: $DWarp
+  script: $Warp
   arguments:
     mapName: Viridian_City
     x: 29
     y: 16
     layer: 1
+    warpWalk: S
 - x: 4
   y: 0
   layer: 1
-  script: $DWarp
+  script: $Warp
   arguments:
     mapName: Viridian_City
     x: 29
     y: 16
     layer: 1
+    warpWalk: S

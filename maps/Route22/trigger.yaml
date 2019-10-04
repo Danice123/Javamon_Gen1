@@ -3,12 +3,14 @@ triggers:
 - x: 34
   y: 22
   layer: 1
+  name: Second_Rival_Battle
   script: Rival
   arguments:
     Side: Bottom
 - x: 34
   y: 23
   layer: 1
+  name: Second_Rival_Battle
   script: Rival
   arguments:
     Side: Top

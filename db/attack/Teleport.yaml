@@ -1,6 +1,7 @@
 ---
 name: Teleport
 type: PSYCHIC
+damageClass: NONE
 uses: 20
 missable: false
 priority: 0

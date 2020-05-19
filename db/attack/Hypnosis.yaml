@@ -1,11 +1,12 @@
 ---
 name: Hypnosis
 type: PSYCHIC
+damageClass: NONE
 uses: 20
 accuracy: 60
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.StatusEffect
+- effect: dev.dankins.javamon.battle.data.attack.effect.StatusEffect
   target: TARGET
   status: SLEEP

@@ -1,11 +1,12 @@
 ---
 name: Toxic
 type: POISON
+damageClass: NONE
 uses: 10
 accuracy: 90
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.StatusEffect
+- effect: dev.dankins.javamon.battle.data.attack.effect.StatusEffect
   target: TARGET
   status: POISON_TOXIC

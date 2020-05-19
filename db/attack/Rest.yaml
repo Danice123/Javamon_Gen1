@@ -1,12 +1,15 @@
 ---
 name: Rest
 type: PSYCHIC
+damageClass: NONE
 uses: 10
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.StatusEffect
+- effect: dev.dankins.javamon.battle.data.attack.effect.StatusEffect
   target: USER
   status: SLEEP
-- effect: dev.dankins.javamon.data.monster.attack.effect.Heal
+- effect: dev.dankins.javamon.battle.data.attack.effect.Heal
   percent: 100
+- effect: dev.dankins.javamon.battle.data.attack.effect.Display
+  text: $user has been healed!

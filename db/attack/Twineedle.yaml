@@ -1,22 +1,22 @@
 ---
 name: Twineedle
 type: BUG
+damageClass: PHYSICAL
 uses: 20
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Multiple
+- effect: dev.dankins.javamon.battle.data.attack.effect.Multiple
   min: 2
   max: 2
   effects:
-  - effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+  - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
     power: 25
-    damageType: PHYSICAL
     contact: true
-- effect: dev.dankins.javamon.data.monster.attack.effect.Chance
+- effect: dev.dankins.javamon.battle.data.attack.effect.Chance
   chance: 20
   effects:
-  - effect: dev.dankins.javamon.data.monster.attack.effect.StatusEffect
+  - effect: dev.dankins.javamon.battle.data.attack.effect.StatusEffect
     target: TARGET
     status: POISON

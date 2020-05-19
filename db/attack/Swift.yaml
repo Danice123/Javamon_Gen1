@@ -1,10 +1,10 @@
 ---
 name: Swift
 type: NORMAL
+damageClass: SPECIAL
 uses: 20
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 60
-  damageType: SPECIAL

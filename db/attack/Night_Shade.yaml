@@ -1,10 +1,11 @@
 ---
 name: Night Shade
 type: GHOST
+damageClass: SPECIAL
 uses: 15
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.LevelDamage
+- effect: dev.dankins.javamon.battle.data.attack.effect.LevelDamage
   percent: 100

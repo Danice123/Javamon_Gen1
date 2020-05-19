@@ -1,6 +1,7 @@
 ---
 name: Roar
 type: NORMAL
+damageClass: NONE
 uses: 20
 missable: false
 priority: -6

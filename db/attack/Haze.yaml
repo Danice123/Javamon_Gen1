@@ -1,12 +1,14 @@
 ---
 name: Haze
 type: ICE
+damageClass: NONE
 uses: 30
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.ClearStats
+- effect: dev.dankins.javamon.battle.data.attack.effect.ClearStats
   target: TARGET
-- effect: dev.dankins.javamon.data.monster.attack.effect.ClearStats
+- effect: dev.dankins.javamon.battle.data.attack.effect.ClearStats
   target: USER
+- effect: dev.dankins.javamon.battle.data.attack.effect.Display
   text: A haze clears all stat effects

@@ -1,15 +1,15 @@
 ---
 name: Spike Cannon
 type: NORMAL
+damageClass: PHYSICAL
 uses: 15
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Multiple
+- effect: dev.dankins.javamon.battle.data.attack.effect.Multiple
   min: 2
   max: 5
   effects:
-  - effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+  - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
     power: 20
-    damageType: PHYSICAL

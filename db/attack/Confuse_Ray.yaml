@@ -1,18 +1,11 @@
 ---
 name: Confuse Ray
 type: GHOST
+damageClass: NONE
 uses: 10
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.SetFlag
-  target: TARGET
-  flag: isConfused
-  text: $target has become confused!
-- effect: dev.dankins.javamon.data.monster.attack.effect.SetCounter
-  target: TARGET
-  counter: ConfusionCounter
-  type: RANDOM
-  min: 2
-  max: 5
+  - effect: dev.dankins.javamon.battle.data.attack.effect.proxy.ProxyEffect
+    name: Confusion

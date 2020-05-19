@@ -1,11 +1,11 @@
 ---
 name: Rock Throw
 type: ROCK
+damageClass: PHYSICAL
 uses: 15
 accuracy: 90
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 50
-  damageType: PHYSICAL

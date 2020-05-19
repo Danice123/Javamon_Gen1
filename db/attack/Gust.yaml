@@ -1,11 +1,11 @@
 ---
 name: Gust
 type: FLYING
+damageClass: SPECIAL
 uses: 35
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 40
-  damageType: SPECIAL

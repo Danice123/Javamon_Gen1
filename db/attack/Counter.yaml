@@ -1,8 +1,30 @@
 ---
 name: Counter
 type: FIGHTING
+damageClass: PHYSICAL
 uses: 20
 accuracy: 100
 missable: true
 priority: -5
+requirements:
+  - requirement: dev.dankins.javamon.battle.data.attack.require.Exist
+    value:
+      evaluator: dev.dankins.javamon.battle.data.attack.evaluator.attack.AttackHitByThisTurn
+      target: USER
+  - requirement: dev.dankins.javamon.battle.data.attack.require.Equal
+    A:
+      evaluator: dev.dankins.javamon.battle.data.attack.evaluator.attack.ClassDef
+      fromAttack:
+        evaluator: dev.dankins.javamon.battle.data.attack.evaluator.attack.AttackHitByThisTurn
+        target: USER
+    B:
+      evaluator: dev.dankins.javamon.battle.data.attack.evaluator.attack.ClassDef
+      value: PHYSICAL
 effects:
+  - effect: dev.dankins.javamon.battle.data.attack.effect.StaticDamage
+    damage:
+      evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Multiply
+      value:
+        evaluator: dev.dankins.javamon.battle.data.attack.evaluator.LastDamageTaken
+        target: USER
+      multiplier: 2

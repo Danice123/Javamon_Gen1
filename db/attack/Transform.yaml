@@ -1,6 +1,7 @@
 ---
 name: Transform
 type: NORMAL
+damageClass: NONE
 uses: 10
 missable: false
 priority: 0

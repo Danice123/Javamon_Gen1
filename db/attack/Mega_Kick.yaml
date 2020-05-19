@@ -1,12 +1,12 @@
 ---
 name: Mega Kick
 type: NORMAL
+damageClass: PHYSICAL
 uses: 5
 accuracy: 75
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 120
-  damageType: PHYSICAL
   contact: true

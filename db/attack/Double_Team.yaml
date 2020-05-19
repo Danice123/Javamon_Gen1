@@ -1,11 +1,12 @@
 ---
 name: Double Team
 type: NORMAL
+damageClass: NONE
 uses: 15
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.StatEffect
+- effect: dev.dankins.javamon.battle.data.attack.effect.StatEffect
   target: USER
   stat: EVASION
   level: 1

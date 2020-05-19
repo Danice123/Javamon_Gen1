@@ -1,13 +1,13 @@
 ---
 name: Karate Chop
 type: FIGHTING
+damageClass: PHYSICAL
 uses: 25
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 50
-  damageType: PHYSICAL
   contact: true
   crit: 1

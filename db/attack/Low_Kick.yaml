@@ -1,6 +1,7 @@
 ---
 name: Low Kick
 type: FIGHTING
+damageClass: PHYSICAL
 uses: 20
 accuracy: 100
 missable: true

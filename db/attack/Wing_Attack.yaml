@@ -1,12 +1,12 @@
 ---
 name: Wing Attack
 type: FLYING
+damageClass: PHYSICAL
 uses: 35
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 60
-  damageType: PHYSICAL
   contact: true

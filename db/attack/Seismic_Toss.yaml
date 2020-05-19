@@ -1,10 +1,11 @@
 ---
 name: Seismic Toss
 type: FIGHTING
+damageClass: PHYSICAL
 uses: 20
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.LevelDamage
+- effect: dev.dankins.javamon.battle.data.attack.effect.LevelDamage
   percent: 100

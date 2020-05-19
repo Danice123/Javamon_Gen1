@@ -1,12 +1,13 @@
 ---
 name: SmokeScreen
 type: NORMAL
+damageClass: NONE
 uses: 20
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.StatEffect
+- effect: dev.dankins.javamon.battle.data.attack.effect.StatEffect
   target: TARGET
   stat: ACCURACY
   level: -1

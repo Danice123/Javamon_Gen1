@@ -1,17 +1,17 @@
 ---
 name: Sludge
 type: POISON
+damageClass: SPECIAL
 uses: 20
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 65
-  damageType: SPECIAL
-- effect: dev.dankins.javamon.data.monster.attack.effect.Chance
+- effect: dev.dankins.javamon.battle.data.attack.effect.Chance
   chance: 30
   effects:
-  - effect: dev.dankins.javamon.data.monster.attack.effect.StatusEffect
+  - effect: dev.dankins.javamon.battle.data.attack.effect.StatusEffect
     target: TARGET
     status: POISON

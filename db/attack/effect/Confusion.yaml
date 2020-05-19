@@ -1,52 +1,50 @@
 ---
-name: Bind
-type: NORMAL
-damageClass: PHYSICAL
-uses: 20
-accuracy: 85
-missable: true
-priority: 0
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
-    power: 15
-    contact: true
-    
   - effect: dev.dankins.javamon.battle.data.attack.effect.CustomStatus
-    name: Trap
+    name: Confusion
     target: TARGET
     events:
       onEffectInit:
         - effect: dev.dankins.javamon.battle.data.attack.effect.SetCounter
           target: TARGET
-          counter: BIND
+          counter: CONFUSION
           value:
             evaluator: dev.dankins.javamon.battle.data.attack.evaluator.RandomRange
             max: 5
-            min: 4
-      onTurnEnd:
-        - effect: dev.dankins.javamon.battle.data.attack.effect.StaticDamage
-          pDamage: true
-          percent: 12
+            min: 2
+        - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+          text: $target became confused!
+      onAttackBegin:
+        - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+          text: $target is confused!
         - effect: dev.dankins.javamon.battle.data.attack.effect.SetCounter
           target: TARGET
-          counter: BIND
+          counter: CONFUSION
           value:
             evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Decrement
             value:
               evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Counter
               target: TARGET
-              counter: BIND
-        - effect: dev.dankins.javamon.battle.data.attack.effect.Display
-          text: $target is hurt by the Bind!
+              counter: CONFUSION
         - effect: dev.dankins.javamon.battle.data.attack.effect.Conditional
-          requirements:
+          if:
             - requirement: dev.dankins.javamon.battle.data.attack.require.CheckCounter
               target: TARGET
               counters:
-                BIND: 0
-          effects:
+                CONFUSION: 0
+          then:
             - effect: dev.dankins.javamon.battle.data.attack.effect.RemoveCustomStatus
-              name: Trap
+              name: Confusion
               target: TARGET
             - effect: dev.dankins.javamon.battle.data.attack.effect.Display
-              text: $target was released from the Bind!
+              text: $target snapped out of confusion!
+          else:
+            - effect: dev.dankins.javamon.battle.data.attack.effect.Chance
+              chance: 33
+              effects:
+                - effect: dev.dankins.javamon.battle.data.attack.effect.Cancel
+                - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+                  text: $target hurt itself in confusion!
+                - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+                  power: 40
+                  damageType: PHYSICAL

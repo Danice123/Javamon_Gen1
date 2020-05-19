@@ -1,18 +1,15 @@
 ---
 name: Waterfall
 type: WATER
+damageClass: PHYSICAL
 uses: 15
 accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.Damage
+- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
   power: 80
-  damageType: PHYSICAL
   contact: true
-- effect: dev.dankins.javamon.data.monster.attack.effect.Chance
+- effect: dev.dankins.javamon.battle.data.attack.effect.Chance
   chance: 20
   effects:
-  - effect: dev.dankins.javamon.data.monster.attack.effect.SetFlag
-    target: TARGET
-    flag: isFlinching

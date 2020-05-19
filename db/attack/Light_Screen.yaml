@@ -1,6 +1,7 @@
 ---
 name: Light Screen
 type: PSYCHIC
+damageClass: NONE
 uses: 30
 missable: false
 priority: 0

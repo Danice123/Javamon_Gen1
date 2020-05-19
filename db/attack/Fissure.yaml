@@ -1,12 +1,13 @@
 ---
 name: Fissure
 type: GROUND
+damageClass: PHYSICAL
 uses: 5
 missable: false
 priority: 0
 requirements:
 - requirement: dev.dankins.javamon.data.monster.attack.require.OHKO
 effects:
-- effect: dev.dankins.javamon.data.monster.attack.effect.StatusEffect
+- effect: dev.dankins.javamon.battle.data.attack.effect.StatusEffect
   target: TARGET
   status: FAINTED

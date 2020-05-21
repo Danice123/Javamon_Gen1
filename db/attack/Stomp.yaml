@@ -7,9 +7,9 @@ accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 65
   contact: true
-- effect: dev.dankins.javamon.battle.data.attack.effect.Chance
+- effect: .Chance
   chance: 30
   effects:

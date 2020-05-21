@@ -7,7 +7,7 @@ accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.StatEffect
+- effect: .StatEffect
   target: TARGET
   stat: ACCURACY
   level: -1

@@ -6,5 +6,5 @@ uses: 20
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 60

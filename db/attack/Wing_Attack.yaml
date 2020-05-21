@@ -7,6 +7,6 @@ accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 60
   contact: true

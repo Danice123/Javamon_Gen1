@@ -3,26 +3,52 @@ name: Bide
 type: NORMAL
 damageClass: PHYSICAL
 uses: 10
-accuracy: 100
-missable: true
+missable: false
 priority: 1
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.MultiTurn
-  first:
-    - effect: dev.dankins.javamon.battle.data.attack.effect.SetFlag
-      target: USER
-      flag: BIDE
-      value: True
-  middle:
-    - effect: dev.dankins.javamon.battle.data.attack.effect.Display
-      text: $user is storing energy!
-  last:
-    - effect: dev.dankins.javamon.battle.data.attack.effect.Display
-      text: $user unleashed energy!
-    - effect: dev.dankins.javamon.battle.data.attack.effect.SetFlag
-      target: USER
-      flag: BIDE
-      value: False
-  length:
-    evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Number
-    value: 3
+  - effect: .MultiTurn
+    first:
+      - effect: .CustomStatus
+        name: Bide
+        target: USER
+        events:
+          onEffectInit:
+            - effect: .SetCounter
+              target: USER
+              counter: BideDamage
+              value:
+                evaluator: .Number
+                value: 0
+          onAttackTargetedHit:
+            - effect: .SetCounter
+              target: USER
+              counter: BideDamage
+              value:
+                evaluator: .Add
+                args:
+                  - evaluator: .Counter
+                    target: USER
+                    counter: DamageTaken
+                  - evaluator: .Counter
+                    target: USER
+                    counter: BideDamage
+    middle:
+      - effect: .Display
+        text: $user is storing energy!
+    last:
+      - effect: .Display
+        text: $user unleashed energy!
+      - effect: .StaticDamage
+        damage:
+          evaluator: .Multiply
+          value:
+            evaluator: .Counter
+            target: USER
+            counter: BideDamage
+          multiplier: 2
+      - effect: .RemoveCustomStatus
+        name: Bide
+        target: USER
+    length:
+      evaluator: .Number
+      value: 3

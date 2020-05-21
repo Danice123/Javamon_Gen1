@@ -6,7 +6,7 @@ uses: 20
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.StatEffect
+- effect: .StatEffect
   target: USER
   stat: EVASION
   level: 2

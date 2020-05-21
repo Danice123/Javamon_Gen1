@@ -7,6 +7,11 @@ accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 70
   contact: true
+- effect: .Chance
+  chance: 20
+  effects:
+    - effect: .proxy.ProxyEffect
+      name: Confusion

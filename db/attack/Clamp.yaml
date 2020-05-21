@@ -7,46 +7,46 @@ accuracy: 85
 missable: true
 priority: 0
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+  - effect: .Damage
     power: 35
     contact: true
 
-  - effect: dev.dankins.javamon.battle.data.attack.effect.CustomStatus
+  - effect: .CustomStatus
     name: Trap
     target: TARGET
     events:
       onEffectInit:
-        - effect: dev.dankins.javamon.battle.data.attack.effect.SetCounter
+        - effect: .SetCounter
           target: TARGET
           counter: Clamp
           value:
-            evaluator: dev.dankins.javamon.battle.data.attack.evaluator.RandomRange
+            evaluator: .RandomRange
             max: 5
             min: 4
       onTurnEnd:
-        - effect: dev.dankins.javamon.battle.data.attack.effect.StaticDamage
+        - effect: .StaticDamage
           pDamage: true
           percent: 12
-        - effect: dev.dankins.javamon.battle.data.attack.effect.SetCounter
+        - effect: .SetCounter
           target: TARGET
           counter: Clamp
           value:
-            evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Decrement
+            evaluator: .Decrement
             value:
-              evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Counter
+              evaluator: .Counter
               target: TARGET
               counter: Clamp
-        - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+        - effect: .Display
           text: $target is hurt by the Clamp!
-        - effect: dev.dankins.javamon.battle.data.attack.effect.Conditional
+        - effect: .Conditional
           requirements:
-            - requirement: dev.dankins.javamon.battle.data.attack.require.CheckCounter
+            - requirement: .CheckCounter
               target: TARGET
               counters:
                 Clamp: 0
           effects:
-            - effect: dev.dankins.javamon.battle.data.attack.effect.RemoveCustomStatus
+            - effect: .RemoveCustomStatus
               name: Trap
               target: TARGET
-            - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+            - effect: .Display
               text: $target was released from the Clamp!

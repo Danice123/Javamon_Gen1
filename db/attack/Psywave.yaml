@@ -7,7 +7,7 @@ accuracy: 80
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.LevelDamage
+- effect: .LevelDamage
   random: true
   max: 15
   min: 5

@@ -6,7 +6,7 @@ uses: 10
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Heal
+- effect: .Heal
   percent: 50
-- effect: dev.dankins.javamon.battle.data.attack.effect.Display
+- effect: .Display
   text: $user has been healed!

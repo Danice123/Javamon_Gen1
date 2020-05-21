@@ -7,13 +7,13 @@ accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 10
   contact: true
-- effect: dev.dankins.javamon.battle.data.attack.effect.Chance
+- effect: .Chance
   chance: 10
   effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.StatEffect
+  - effect: .StatEffect
     target: TARGET
     stat: SPEED
     level: -1

@@ -1,50 +1,50 @@
 ---
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.CustomStatus
+  - effect: .CustomStatus
     name: Confusion
     target: TARGET
     events:
       onEffectInit:
-        - effect: dev.dankins.javamon.battle.data.attack.effect.SetCounter
+        - effect: .SetCounter
           target: TARGET
           counter: CONFUSION
           value:
-            evaluator: dev.dankins.javamon.battle.data.attack.evaluator.RandomRange
+            evaluator: .RandomRange
             max: 5
             min: 2
-        - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+        - effect: .Display
           text: $target became confused!
       onAttackBegin:
-        - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+        - effect: .Display
           text: $target is confused!
-        - effect: dev.dankins.javamon.battle.data.attack.effect.SetCounter
+        - effect: .SetCounter
           target: TARGET
           counter: CONFUSION
           value:
-            evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Decrement
+            evaluator: .Decrement
             value:
-              evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Counter
+              evaluator: .Counter
               target: TARGET
               counter: CONFUSION
-        - effect: dev.dankins.javamon.battle.data.attack.effect.Conditional
+        - effect: .Conditional
           if:
-            - requirement: dev.dankins.javamon.battle.data.attack.require.CheckCounter
+            - requirement: .CheckCounter
               target: TARGET
               counters:
                 CONFUSION: 0
           then:
-            - effect: dev.dankins.javamon.battle.data.attack.effect.RemoveCustomStatus
+            - effect: .RemoveCustomStatus
               name: Confusion
               target: TARGET
-            - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+            - effect: .Display
               text: $target snapped out of confusion!
           else:
-            - effect: dev.dankins.javamon.battle.data.attack.effect.Chance
+            - effect: .Chance
               chance: 33
               effects:
-                - effect: dev.dankins.javamon.battle.data.attack.effect.Cancel
-                - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+                - effect: .Cancel
+                - effect: .Display
                   text: $target hurt itself in confusion!
-                - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+                - effect: .Damage
                   power: 40
                   damageType: PHYSICAL

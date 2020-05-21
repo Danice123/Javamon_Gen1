@@ -6,5 +6,5 @@ uses: 40
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Display
+- effect: .Display
   text: The attack did nothing!

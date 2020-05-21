@@ -6,21 +6,21 @@ uses: 30
 missable: false
 priority: 0
 requirements:
-  - requirement: dev.dankins.javamon.battle.data.attack.require.Not
+  - requirement: .Not
     value:
-      requirement: dev.dankins.javamon.battle.data.attack.require.Equal
+      requirement: .Equal
       A:
-        evaluator: dev.dankins.javamon.battle.data.attack.evaluator.MoveType
+        evaluator: .MoveType
         target: USER
         slot: 0
       B:
-        evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Type
+        evaluator: .Type
         target: USER
 
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.ChangeType
+  - effect: .ChangeType
     target: USER
     type:
-      evaluator: dev.dankins.javamon.battle.data.attack.evaluator.MoveType
+      evaluator: .MoveType
       target: USER
       slot: 0 

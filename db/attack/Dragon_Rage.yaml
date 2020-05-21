@@ -7,5 +7,7 @@ accuracy: 100
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.StaticDamage
-  damage: 40
+- effect: .StaticDamage
+  damage:
+    evaluator: .Number
+    value: 40

@@ -5,7 +5,7 @@ damageClass: PHYSICAL
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 50
   contact: true
   recoil: 25

@@ -7,5 +7,44 @@ accuracy: 85
 missable: true
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
-  power: 35
+  - effect: .Damage
+    power: 35
+  - effect: .CustomStatus
+    name: Trap
+    target: TARGET
+    events:
+      onEffectInit:
+        - effect: .SetCounter
+          target: TARGET
+          counter: Fire Spin
+          value:
+            evaluator: .RandomRange
+            max: 5
+            min: 4
+      onTurnEnd:
+        - effect: .StaticDamage
+          pDamage: true
+          percent: 12
+        - effect: .SetCounter
+          target: TARGET
+          counter: Fire Spin
+          value:
+            evaluator: .Decrement
+            value:
+              evaluator: .Counter
+              target: TARGET
+              counter: Fire Spin
+        - effect: .Display
+          text: $target is hurt by the Fire Spin!
+        - effect: .Conditional
+          requirements:
+            - requirement: .CheckCounter
+              target: TARGET
+              counters:
+                Fire Spin: 0
+          effects:
+            - effect: .RemoveCustomStatus
+              name: Trap
+              target: TARGET
+            - effect: .Display
+              text: $target was released from the Fire Spin!

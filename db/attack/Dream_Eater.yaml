@@ -7,9 +7,10 @@ accuracy: 100
 missable: true
 priority: 0
 requirements:
-- requirement: dev.dankins.javamon.data.monster.attack.require.CheckEnemy
-  isAsleep: true
+  - requirement: .HasStatus
+    target: TARGET
+    status: Sleep
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+- effect: .Damage
   power: 100
   drain: 50

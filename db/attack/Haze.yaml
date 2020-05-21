@@ -6,9 +6,9 @@ uses: 30
 missable: false
 priority: 0
 effects:
-- effect: dev.dankins.javamon.battle.data.attack.effect.ClearStats
+- effect: .ClearStats
   target: TARGET
-- effect: dev.dankins.javamon.battle.data.attack.effect.ClearStats
+- effect: .ClearStats
   target: USER
-- effect: dev.dankins.javamon.battle.data.attack.effect.Display
+- effect: .Display
   text: A haze clears all stat effects

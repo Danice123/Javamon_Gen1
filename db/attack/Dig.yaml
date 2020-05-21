@@ -6,20 +6,25 @@ uses: 10
 missable: false
 priority: 0
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.MultiTurn
+  - effect: .MultiTurn
     first:
-      - effect: dev.dankins.javamon.battle.data.attack.effect.Display
+      - effect: .Display
         text: $user burrowed its way under the ground!
-      - effect: dev.dankins.javamon.battle.data.attack.effect.SetFlag
-        flag: UNDERGROUND
-        value: True
+      - effect: .CustomStatus
+        name: Dig
+        target: USER
+        events:
+          onAttackTargeted:
+            - effect: .Cancel
+            - effect: .Display
+              text: $user avoided the attack!
     last:
-      - effect: dev.dankins.javamon.battle.data.attack.effect.Damage
+      - effect: .Damage
         power: 80
         contact: true
-      - effect: dev.dankins.javamon.battle.data.attack.effect.SetFlag
-        flag: UNDERGROUND
-        value: False
+      - effect: .RemoveCustomStatus
+        name: Dig
+        target: USER
     length:
-      evaluator: dev.dankins.javamon.battle.data.attack.evaluator.Number
+      evaluator: .Number
       value: 2

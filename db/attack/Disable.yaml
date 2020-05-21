@@ -7,9 +7,81 @@ accuracy: 100
 missable: true
 priority: 0
 requirements:
+  - requirement: .Not
+    value:
+      requirement: .HasStatus
+      status: Disable
+      target: TARGET
+  - requirement: .Exist
+    value:
+      evaluator: .attack.LastAttackUsed
+      target: TARGET
 effects:
-  - effect: dev.dankins.javamon.battle.data.attack.effect.CustomStatus
+  - effect: .CustomStatus
     name: Disable
     target: TARGET
     events:
-      
+      onEffectInit:
+        - effect: .Store
+          target: TARGET
+          store: DisabledMove
+          value:
+            evaluator: .attack.LastAttackUsed
+            target: TARGET
+        - effect: .SetCounter
+          target: TARGET
+          counter: Disable
+          value:
+            evaluator: .Number
+            value: 4
+        - effect: .Display
+          text: $target's $move was disabled!
+          variables:
+            $move:
+              evaluator: .string.NameOf
+              value:
+                evaluator: .attack.LastAttackUsed
+                target: TARGET
+      onAttackChoice:
+        - effect: .Conditional
+          if:
+            - requirement: .Equal
+              A:
+                evaluator: .Store
+                target: TARGET
+                store: DisabledMove
+              B:
+                evaluator: .Store
+                target: TARGET
+                store: ChosenAttack
+          then:
+            - effect: .Cancel
+            - effect: .Display
+              text: The move is disabled!
+      onAttackBegin:
+        - effect: .SetCounter
+          target: TARGET
+          counter: Disable
+          value:
+            evaluator: .Decrement
+            value:
+              evaluator: .Counter
+              target: TARGET
+              counter: Disable
+      onTurnEnd:
+        - effect: .Conditional
+          if:
+            - requirement: .Equal
+              A:
+                evaluator: .Counter
+                target: TARGET
+                counter: Disable
+              B:
+                evaluator: .Number
+                value: 0
+          then:
+            - effect: .RemoveCustomStatus
+              name: Disable
+              target: TARGET
+            - effect: .Display
+              text: $target was disabled no more!
